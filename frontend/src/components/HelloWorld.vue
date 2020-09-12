@@ -15,11 +15,13 @@ export default {
   methods: {
     getMessage: function() {
       var self = this;
-      window.backend.basic().then(result => {
-        self.message = result;
+      window.backend.Stats.GetCPUUsage().then(result => {
+        //self.message = result;
+        console.log(result)
+        self.message = result
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
