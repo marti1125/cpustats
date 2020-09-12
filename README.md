@@ -1,0 +1,2 @@
+# cpustats
+Wails Project
